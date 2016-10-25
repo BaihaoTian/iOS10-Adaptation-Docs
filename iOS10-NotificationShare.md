@@ -148,6 +148,9 @@ Attachments的加入也可以让你更好的对发给用户的通知进行分类
 ###从开发的角度来看更新点
 
 ####UserNotifications framework详解
+
+
+![](http://ocnhrgfjb.bkt.clouddn.com/image/iOS10NotificationShare/101.png)
 首先介绍UserNotification的几个主要类
 ![](http://ocnhrgfjb.bkt.clouddn.com/image/iOS10NotificationShare/userNotificationClass.jpeg)
 
@@ -277,6 +280,8 @@ UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:re
 
 * Local Notification 通过更新 request
 * Remote Notification 通过新的字段 apns-collapse-id
+
+
 通过之前的 `addNotificationRequest:` 方法，在 id 不变的情况下重新添加，就可以刷新原有的推送。
 
 ```objc
